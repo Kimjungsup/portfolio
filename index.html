@@ -22,19 +22,20 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div>
-            <img src="./images/sup_favi.png" alt="logo">
-            <h1><a href="#">Jayden</a></h1>
+    <header class="header">
+        <!-- BEM (Box Element Modifier) 베엠 -->
+        <div class="header__logo">
+            <img class="header__logo__img" src="./images/sup_favi.png" alt="logo">
+            <h1 class="header__logo__title"><a href="#">Jayden</a></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">홈으로</a></li>
-                <li><a href="#about">정섭</a></li>
-                <li><a href="#skills">기술</a></li>
-                <li><a href="#career">경력</a></li>
-                <li><a href="license">자격증</a></li>
-                <li><a href="contact">연락처</a></li>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#home" class="header__menu__item active">홈으로</a></li>
+                <li><a href="#about" class="header__menu__item">정섭</a></li>
+                <li><a href="#skills" class="header__menu__item">기술</a></li>
+                <li><a href="#career" class="header__menu__item">경력</a></li>
+                <li><a href="license"class="header__menu__item">자격증</a></li>
+                <li><a href="contact" class="header__menu__item">연락처</a></li>
             </ul>
         </nav>
     </header>
@@ -50,9 +51,9 @@
         </section>
         
         <!-- about -->
-        <section id="about">
-            <h2>정섭</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora sit quisquam laborum consequatur non expedita sint dolor, provident enim similique voluptatum autem ratione dicta, laudantium blanditiis error hic libero.</p>
+        <section id="about" class="section max-container">
+            <h2 class="title">정섭</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora sit quisquam laborum consequatur non expedita sint dolor, provident enim similique voluptatum autem ratione dicta, laudantium blanditiis error hic libero.</p>
             <!--ul>li*3>i+p+p-->
             <ul>
                 <li>
@@ -84,9 +85,10 @@
         </section>
         
         <!-- skill -->
-        <section id="skills">
-            <h2>기술</h2>
-            <p>언어 및 도구</p>
+        <section id="skills" class="section">
+            <div class="max-container">
+            <h2 class="title">기술</h2>
+            <p class="description">언어 및 도구</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem doloremque quasi molestias optio. Provident, hic illo vel inventore ab beatae libero in delectus, facere similique vitae ut nostrum repellat ipsa.</p>
             <div>
                 <section>
@@ -133,57 +135,60 @@
                         <li>수학</li>
                     </ul>
                 </section>
+            </div>
         </div>
   
         
         <!-- career -->
-        <section id="career">
-            <h2>포트폴리오</h2>
-            <p>Project</p>
-            <ul>
-                <li><button>ALL <span>10</span></button></li>
-                <li><button>Front-end <span>3</span></button></li>
-                <li><button>Mobile <span>5</span></button></li>
-                <li><button>Back-end <span>2</span></button></li>
-            </ul>
+        <section id="career" class="section">
+            <div class="max-container">
+            <h2 class="title">포트폴리오</h2>
+            <p class="description">Project</p>
+                <ul>
+                    <li><button>ALL <span>10</span></button></li>
+                    <li><button>Front-end <span>3</span></button></li>
+                    <li><button>Mobile <span>5</span></button></li>
+                    <li><button>Back-end <span>2</span></button></li>
+                </ul>
 
-            <ul> <!-- li = 포트폴리오 설명하는 란 -->
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="./images/project1.png" alt="project1">
-                        <div>
-                            <h3>Project #1</h3>
-                            <p>클론코딩 사이트</p>
-                        </div>
-                    </a>
-                </li>
+                <ul> <!-- li = 포트폴리오 설명하는 란 -->
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/project1.png" alt="project1">
+                            <div>
+                                <h3>Project #1</h3>
+                                <p>클론코딩 사이트</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="./images/project1.png" alt="project2">
-                        <div>
-                            <h3>Project #1</h3>
-                            <p>클론코딩 사이트</p>
-                        </div>
-                    </a>
-                </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/project1.png" alt="project2">
+                            <div>
+                                <h3>Project #1</h3>
+                                <p>클론코딩 사이트</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="./images/project1.png" alt="project3">
-                        <div>
-                            <h3>Project #1</h3>
-                            <p>클론코딩 사이트</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/project1.png" alt="project3">
+                            <div>
+                                <h3>Project #1</h3>
+                                <p>클론코딩 사이트</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         
         <!-- license -->
-        <section id="license">
-            <h2>자격증</h2>
-            <p>국가 기술 자격증</p>
+        <section id="license" class="section max-container">
+            <h2 class="title">자격증</h2>
+            <p class="description">국가 기술 자격증</p>
             <ul>
                 <li>
                     <img src="./images/project1.png" alt="맞춤형화장품조제관리사">
@@ -210,15 +215,16 @@
     </main>
 
     <!-- Footer -->
-
-    <footer id="contact">
-        <h2>감사합니다</h2>
-        <p>mcshady@naver.com</p>
-        <ul>
-            <li><a href="https://github.com/Kimjungsup" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-        <p>ⓒ Jayden - All rights reserved </p>
+    <footer id="contact" class="section">
+        <div class="max-container">
+            <h2 class="title">감사합니다</h2>
+            <p class="description">mcshady@naver.com</p>
+            <ul>
+                <li><a href="https://github.com/Kimjungsup" target="_blank" title="깃허브"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <p>ⓒ Jayden - All rights reserved </p>
+        </div>
     </footer>
 </body>
 </html>
