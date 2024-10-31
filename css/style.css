@@ -6,11 +6,20 @@
     font-style: normal;
 }
 
+@import url('//fonts.googleapis.com/earlyaccess/hanna.css');
+
+@font-face {
+    font-family: 'FlightSans-Title';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/FlightSans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Global */
 
 :root {
     /* Main Colors */
-    --color-primary: var(--color-white);
+    --color-primary: var(--color-black);
     --color-primary-variant: var(---color-gray);
     --color-accent: var(--color-blue);
     --color-accent-variant: var(--color-orange);
@@ -33,7 +42,7 @@
  }
 
  body {
-    font-family: 'BMDOHYEON', sans-serif;
+    font-family: 'FlightSans-Title', sans-serif;
     margin: 0;
  }
 
@@ -113,4 +122,52 @@
 .header__menu__item.active {
     border: 1px solid var(--color-text);
     border-radius: 4px;
+}
+
+/* home */
+
+#home {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 7rem 1rem 5rem;
+    text-align: center;
+}
+
+.home__avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 5px solid var(--color-text);
+    /* 이미지가 부모 요소의 크기에 맞춰 비율을 유지하면서 꽉 차도록 설정 */
+    object-fit: cover;
+}
+
+.home__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home__title--strong {
+    color: var(--color-accent);
+}
+
+.home__description {
+    font-size: 1.5rem;
+}
+
+.home__contact {
+    display: inline-block;
+    /* inline-block을 주면 옆으로 나열 (화면을 줄이게 되면 아래로 떨어짐 wrap) 되고, 글자 속성도 가지고 있다 (열의 속성 + 글자 속성) */
+    background-color: var(--color-accent);
+    color: var(--color-black);
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.home__contact:hover {
+    background-color: transparent;
+    color: var(--color-text);
+    outline: 2px solid var(--color-accent);
 }
