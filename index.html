@@ -55,30 +55,30 @@
             <h2 class="title">정섭</h2>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora sit quisquam laborum consequatur non expedita sint dolor, provident enim similique voluptatum autem ratione dicta, laudantium blanditiis error hic libero.</p>
             <!--ul>li*3>i+p+p-->
-            <ul>
-                <li>
-                    <i class="fa-brands fa-html5"></i>
-                    <p>front-end</p>
+            <ul class="majors">
+                <li class="major">
+                    <i class="fa-brands fa-html5 major__icon"></i>
+                    <p class="major__title">front-end</p>
                     <p>HTML, CSS, JavaScript, Node.js, React</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>Mobile</p>
+                <li class="major">
+                    <i class="fa-solid fa-mobile major__icon"></i>
+                    <p class="major__title">Mobile</p>
                     <p>React-Native, Android, iOS, Kotlin</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-server"></i>
-                    <p>Back-end</p>
+                <li class="major">
+                    <i class="fa-solid fa-server major__icon"></i>
+                    <p class="major__title">Back-end</p>
                     <p>Node.js, FastAPI, Java, GranphQL</p>
                 </li>
             </ul>
             <!-- ul>li>img+div>p+p -->
-            <ul>
-                <li>
+            <ul class="jobs">
+                <li class="job">
                     <img src="./images/hsad.png" alt="HSad">
                     <div>
-                        <p>글로벌 사업 부서 china team</p>
-                        <p>선임</p>
+                        <p class="job__name">글로벌 사업 부서 china team</p>
+                        <p class="job__period">2019~2020</p>
                     </div>
                 </li>
             </ul>
@@ -87,38 +87,63 @@
         <!-- skill -->
         <section id="skills" class="section">
             <div class="max-container">
-            <h2 class="title">기술</h2>
-            <p class="description">언어 및 도구</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem doloremque quasi molestias optio. Provident, hic illo vel inventore ab beatae libero in delectus, facere similique vitae ut nostrum repellat ipsa.</p>
-            <div>
-                <section>
-                    <h3>언어</h3>
+                <h2 class="title">기술</h2>
+                <p class="description">언어 및 도구</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem doloremque quasi molestias optio. Provident, hic illo vel inventore ab beatae libero in delectus, facere similique vitae ut nostrum repellat ipsa.</p>
+            <div class="skills">
+                <section class="skills__coding">
+                    <h3 class="skills__title">언어</h3>
                         <ul>
-                            <li>
-                                <div><span>HTML</span><span>18%</span></div>
-                                <div><div style="width: 18%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>HTML</span>
+                                    <span>18%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 18%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>css</span><span>10%</span></div>
-                                <div><div style="width: 10%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>CSS</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 70%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>JavaScript</span><span>18%</span></div>
-                                <div><div style="width: 18%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>JavaScript</span>
+                                    <span>40%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 40%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>React</span><span>18%</span></div>
-                                <div><div style="width: 18%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>React</span>
+                                    <span>38%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 38%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>Node.js</span><span>18%</span></div>
-                                <div><div style="width: 18%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>Node.js</span>
+                                    <span>50%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 50%"></div>
+                                </div>
                             </li>
                         </ul>
                 </section>
                 
-                <section>
-                <h3>도구</h3>
+                <section class="skills__tools">
+                <h3 class="skills__title">도구</h3>
                     <ul>
                         <li>Visual Studio Code</li>
                         <li>Pycharm</li>
@@ -128,8 +153,8 @@
                     </ul>
                 </section>
                 
-                <section>
-                    <h3>기타</h3>
+                <section class="skills__etc">
+                    <h3 class="skills__title">기타</h3>
                     <ul>
                         <li>Git</li>
                         <li>수학</li>
@@ -137,18 +162,18 @@
                 </section>
             </div>
         </div>
-  
+        </section>
         
         <!-- career -->
         <section id="career" class="section">
             <div class="max-container">
             <h2 class="title">포트폴리오</h2>
             <p class="description">Project</p>
-                <ul>
-                    <li><button>ALL <span>10</span></button></li>
-                    <li><button>Front-end <span>3</span></button></li>
-                    <li><button>Mobile <span>5</span></button></li>
-                    <li><button>Back-end <span>2</span></button></li>
+                <ul class="categories">
+                    <li><button class="category category--selected">ALL <span class="category__count">10</span></button></li>
+                    <li><button class="category category--selected">Front-end <span class="category__count">3</span></button></li>
+                    <li><button class="category category--selected">Mobile <span class="category__count">5</span></button></li>
+                    <li><button class="category category--selected">Back-end <span class="category__count">2</span></button></li>
                 </ul>
 
                 <ul> <!-- li = 포트폴리오 설명하는 란 -->
