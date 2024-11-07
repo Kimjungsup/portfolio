@@ -18,6 +18,7 @@
     
     <!-- 자스 연결-->
     <script src="./js/main.js" defer></script>  <!-- defer: html 위에서부터 읽어서 .header 를 읽을 수 없음, 그래서 html을 다 읽고 자스 읽도록 만듬-->
+    <script src="./js/projects.js" defer></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bf902b28f9.js" crossorigin="anonymous"></script>
@@ -178,14 +179,15 @@
             <h2 class="title">포트폴리오</h2>
             <p class="description">Project</p>
                 <ul class="categories">
-                    <li><button class="category category--selected">ALL <span class="category__count">10</span></button></li>
-                    <li><button class="category">Front-end <span class="category__count">3</span></button></li>
-                    <li><button class="category">Mobile <span class="category__count">5</span></button></li>
-                    <li><button class="category">Back-end <span class="category__count">2</span></button></li>
+                    <li><button class="category category--selected" data-category="All">ALL <span class="category__count">10</span></button></li>
+                    <li><button class="category" data-category="Front-end">Front-end <span class="category__count">3</span></button></li>
+                    <li><button class="category" data-category="Mobile">Mobile <span class="category__count">5</span></button></li>
+                    <li><button class="category" data-category="Back-end">Back-end <span class="category__count">2</span></button></li>
                 </ul>
 
-                <ul class="projects"> <!-- li = 포트폴리오 설명하는 란 -->
-                    <li class="project">
+                <!-- li = 포트폴리오 설명하는 란 -->
+                <ul class="projects"> 
+                    <li class="project" data-type="Front-end">
                         <a href="#" target="_blank">
                             <img src="./images/project1.png" alt="project1" class="project__img">
                             <div class="project__metadata">
@@ -195,7 +197,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project" data-type="Back-end">
                         <a href="#" target="_blank">
                             <img src="./images/project1.png" alt="project1" class="project__img">
                             <div class="project__metadata">
@@ -205,7 +207,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project" data-type="Mobile">
                         <a href="#" target="_blank">
                             <img src="./images/project1.png" alt="project1" class="project__img">
                             <div class="project__metadata">
@@ -215,7 +217,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project" data-type="Front-end">
                         <a href="#" target="_blank">
                             <img src="./images/project1.png" alt="project1" class="project__img">
                             <div class="project__metadata">
@@ -225,7 +227,7 @@
                         </a>
                     </li>
 
-                    <li class="project">
+                    <li class="project"  data-type="Back-end">
                         <a href="#" target="_blank">
                             <img src="./images/project1.png" alt="project1" class="project__img">
                             <div class="project__metadata">
