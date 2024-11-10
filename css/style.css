@@ -6,8 +6,6 @@
     font-style: normal;
 }
 
-@import url('//fonts.googleapis.com/earlyaccess/hanna.css');
-
 @font-face {
     font-family: 'Gyeonggi_Batang_Regular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff') format('woff');
